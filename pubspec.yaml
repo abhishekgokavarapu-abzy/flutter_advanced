@@ -17,11 +17,20 @@ dev_dependencies:
 
 
   flutter_lints: ^2.0.0
+  flutter_svg: ^2.0.5
 
 flutter:
   uses-material-design: true
   assets:
     - assets/images/splash_logo.png
+    - assets/images/onboarding_logo1.svg
+    - assets/images/onboarding_logo2.svg
+    - assets/images/onboarding_logo3.svg
+    - assets/images/onboarding_logo4.svg
+    - assets/images/hollow_cirlce_ic.svg
+    - assets/images/left_arrow_ic.svg
+    - assets/images/right_arrow_ic.svg
+    - assets/images/solid_circle_ic.svg
   fonts:
     - family: Montserrat
       fonts:
