@@ -13,7 +13,7 @@ class LoginViewModel extends BaseViewModel
   StreamController _isAllInputsValidStreamController =
       StreamController<void>.broadcast();
 
-  LoginUseCase? _loginUseCase; //todo remove ?
+  LoginUseCase _loginUseCase;
 
   LoginViewModel(this._loginUseCase);
   // inputs
@@ -41,8 +41,7 @@ class LoginViewModel extends BaseViewModel
 
   @override
   login() async {
-    /*
-        (await _loginUseCase!.execute(
+    (await _loginUseCase.execute(
             LoginUseCaseInput(loginObject.userName, loginObject.password)))
         .fold(
             (failure) => {
@@ -53,7 +52,6 @@ class LoginViewModel extends BaseViewModel
                   // right -> success (data)
                   print(data.customer?.name)
                 });
-     */
   }
 
   @override
