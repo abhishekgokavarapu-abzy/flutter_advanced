@@ -22,8 +22,8 @@ class RepositoryImpl extends Repository {
         // its safe to call the API
         final response = await _remoteDataSource.login(loginRequest);
 
-        if (response.status == ApiInternalStatus.SUCCESS) // success
-        {
+        if (response.status == ApiInternalStatus.SUCCESS) {
+          // success
           // return data (success)
           // return right
           return Right(response.toDomain());
