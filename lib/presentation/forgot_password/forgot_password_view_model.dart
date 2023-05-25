@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter_advanced/app/functions.dart';
 import 'package:flutter_advanced/domain/use_case/forgot_password_use_case.dart';
-import 'package:flutter_advanced/presentation/base/baseviewmodel.dart';
+import 'package:flutter_advanced/presentation/base/base_view_model.dart';
 import 'package:flutter_advanced/presentation/common/state_renderer/state_renderer.dart';
 import 'package:flutter_advanced/presentation/common/state_renderer/state_renderer_impl.dart';
 

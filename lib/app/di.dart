@@ -7,9 +7,12 @@ import 'package:flutter_advanced/data/repository/repository_impl.dart';
 import 'package:flutter_advanced/domain/repository/repository.dart';
 import 'package:flutter_advanced/domain/use_case/forgot_password_use_case.dart';
 import 'package:flutter_advanced/domain/use_case/login_use_case.dart';
+import 'package:flutter_advanced/domain/use_case/register_use_case.dart';
 import 'package:flutter_advanced/presentation/forgot_password/forgot_password_view_model.dart';
 import 'package:flutter_advanced/presentation/login/login_view_model.dart';
+import 'package:flutter_advanced/presentation/register/register_view_model.dart';
 import 'package:get_it/get_it.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'app_prefs.dart';
@@ -59,5 +62,15 @@ initForgotPasswordModule() {
         () => ForgotPasswordUseCase(instance()));
     instance.registerFactory<ForgotPasswordViewModel>(
         () => ForgotPasswordViewModel(instance()));
+  }
+}
+
+initRegisterModule() {
+  if (!GetIt.I.isRegistered<RegisterUseCase>()) {
+    instance
+        .registerFactory<RegisterUseCase>(() => RegisterUseCase(instance()));
+    instance.registerFactory<RegisterViewModel>(
+        () => RegisterViewModel(instance()));
+    instance.registerFactory<ImagePicker>(() => ImagePicker());
   }
 }

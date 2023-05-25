@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter_advanced/domain/model/model.dart';
-import 'package:flutter_advanced/presentation/base/baseViewModel.dart';
+import 'package:flutter_advanced/presentation/base/base_view_model.dart';
 import 'package:flutter_advanced/presentation/resources/assets_manager.dart';
 import 'package:flutter_advanced/presentation/resources/strings_manager.dart';
 

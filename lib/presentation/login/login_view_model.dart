@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter_advanced/domain/use_case/login_use_case.dart';
-import 'package:flutter_advanced/presentation/base/baseviewmodel.dart';
+import 'package:flutter_advanced/presentation/base/base_view_model.dart';
 import 'package:flutter_advanced/presentation/common/freezed_data_classes.dart';
 import 'package:flutter_advanced/presentation/common/state_renderer/state_renderer.dart';
 import 'package:flutter_advanced/presentation/common/state_renderer/state_renderer_impl.dart';
